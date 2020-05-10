@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>appname</title>
+    <script src="https://kit.fontawesome.com/7db0b8a953.js" crossorigin="anonymous"></script>
+  </head>
+  <link rel="stylesheet" href="style.css">
+  <body>
+
+    <div class="row">
+  <div class="column">
+    <div class="topnav">
+   <a class="active" href="#home">File</a>
+   <a class="active" href="#news">Edit</a>
+   <a class="active" href="#contact">Go</a>
+   <button class="btn"type="button" name="save">Save</button>
+   <span class="play"><i class="fas fa-play"></i></span>
+   <span class="square">  <i class="fas fa-square"></i></span>
+ </div>
+
+    <textarea id="w3mission" rows="40" cols="100"></textarea>
+  </div>
+
+  <div class="column">
+    <div class="rowone">
+      <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">User</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Account</a>
+    <a href="#about">My projects</a>
+    <a href="#contact">Logout</a>
+  </div>
+</div>
+    <span class="console">  <h3>CONSOLE</h3></span>
+
+    </div>
+    <div class="rowtwo">
+      <p>You can put documentation here!!</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+
+
+  </body>
+</html>

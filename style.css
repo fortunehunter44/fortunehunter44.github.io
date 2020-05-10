@@ -1,0 +1,121 @@
+body{
+  background-color: #000;
+  color: #fff;
+  text-align: left;
+}
+
+#w3mission{
+  background-color: #000;
+  color:#fff;
+  margin-top: 2rem;
+}
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.topnav {
+    background-color:#000;
+    overflow: hidden;
+
+}
+
+.active{
+  color: #fff;
+  text-decoration: none;
+  margin-left: 3rem;
+  margin-top: 1rem;
+}
+/*buttons*/
+.btn{
+  border-radius: 12px;
+  background-color: #008CBA;
+  font-size: 16px;
+  color:#fff;
+  border: 2px solid #008CBA;
+  position: absolute;
+  left: 500px;
+  top: 2px;
+  transition-duration: 0.4s;
+}
+.btn:hover {
+  background-color:white ;
+  color:#008CBA ;
+}
+/*icons*/
+.play{
+  color:#4CAF50;
+  position: absolute;
+  left: 580px;
+}
+.square{
+  color:red;
+  position: absolute;
+  left: 600px;
+}
+
+.console{
+  position: absolute;
+  left:850px;
+  top:10px;
+}
+.rowtwo{
+  position: absolute;
+  left:800px;
+  top:500px;
+}
+
+.dropdown{
+  position: absolute;
+  left:680px;
+  top:10px;
+
+}
+
+/*Dropsown*/
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
